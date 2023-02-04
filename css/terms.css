@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+main p {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+}
+@media (min-width: 1200px) {
+  main {
+    height: 100vh;
+  }
+}

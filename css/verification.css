@@ -1,0 +1,18 @@
+.verification-form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* background: url(./../images/header-background.jpg); */
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.verification-form form {
+  width: 30%;
+  margin-left: 15%;
+}
+.verification-form h2 {
+  font-size: 20px;
+}

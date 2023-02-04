@@ -1,0 +1,137 @@
+.explorer-card {
+  width: 356px;
+  height: 300px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+
+.explorer-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  /* width: 100%; */
+  /* border-bottom-left-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
+  background: linear-gradient(90deg, #ef3d91 0%, #0092ff 100%);
+}
+
+/* .red-to-blue {
+  background: linear-gradient(to right, #ef3d91, #0092ff);
+} */
+.explorer-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #223150;
+  margin-top: 15px;
+}
+.perchantage-4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5e6576;
+  position: relative;
+  right: 2rem;
+}
+.perchantage-12 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #5e6576;
+  margin-right: 1rem;
+}
+.perchantage-8 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #779e37;
+}
+.growth {
+  padding: 1rem;
+}
+.market-growth {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+}
+.bot-growth {
+  display: flex;
+  align-items: baseline;
+}
+.market-growth > div,
+.bot-growth > div {
+  margin-right: 3rem;
+}
+.bot-growth ul {
+  list-style: none;
+  display: flex;
+}
+.years {
+  display: flex;
+  list-style: none;
+  position: relative;
+  left: 9rem;
+}
+.years li {
+  color: #ef473d;
+  border: 1px solid #ef473d;
+  border-radius: 60%;
+  -webkit-border-radius: 45%;
+  -moz-border-radius: 60%;
+  -ms-border-radius: 60%;
+  -o-border-radius: 60%;
+  font-size: 15px;
+  padding: 0px 6px;
+  margin: 0 4px;
+}
+.selected, .years li:hover {
+  background: #e8dcdc;
+}
+.market-growth-title,
+.bot-growth-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #223150;
+}
+.deploy-btn {
+  background: #0092ff;
+  border: 1px solid #0092ff;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 40px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.sidebar-option a {
+  text-decoration: none;
+  color: #223150;
+}
+.active {
+  background: #e0e0e0;
+}
+@media (max-width: 992px) {
+  .right-side > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .explorer-card {
+    height: 330px;
+  }
+}

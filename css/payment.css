@@ -1,0 +1,26 @@
+.payment-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.4px;
+  height: 100vh;
+}
+.payment-container p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #223150;
+}
+
+.payment-container {
+  width: 100%;
+  padding: 0 3%;
+}
+@media (min-width: 1200px) {
+  .payment-container {
+    width: 30%;
+    margin-left: 15%;
+  }
+}

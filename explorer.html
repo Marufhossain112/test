@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Explorer - XQUANTUM</title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/ticker.css">
+    <link rel="stylesheet" href="./css/explorer.css">
+</head>
+
+<body>
+
+    <div>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sidebar">
+                    <div class="profile">
+                        <img src="./images/icons/User.png" alt=""> <span>
+                            Swagat Sarma
+                        </span>
+                    </div>
+                    <div class="sidebar-options">
+                        <div class="sidebar-option">
+                            <a href="./nse-data.html">
+                                <img src="./images/icons/Announced.png" alt=""> <span class="sidebar-item">NSE OHLC Data
+                                </span>
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="./api-access.html">
+                                <img src="./images/icons/ArrowCircleDown.png" alt=""> <span class="sidebar-item">Api
+                                    Access
+                                </span>
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="./ticker.html">
+                                <img src="./images/icons/ArrowsIn.png" alt=""> <span class="sidebar-item">Historical
+                                    ticker
+                                    data </span>
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="./explorer.html">
+                                <img src="./images/icons/Search.png" alt=""> <span class="sidebar-item">Stock explorer
+                                    (Beta) </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <header class="navbar-container">
+        <button class="btn hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <a href="./"><img src="./images/logo.svg.png" alt=""></a>
+        </div>
+
+
+        <div class="question-mark"> <a href="./coming-soon.html">
+                <img src="./images/icons/Question.png" alt="">
+            </a></div>
+    </header>
+    <!-- main -->
+    <main>
+        <!-- side bar that will be hide on mobile -->
+        <div class="sidebar hide-on-moblie">
+            <div class="profile">
+                <img src="./images/icons/User.png" alt=""> <span>
+                    Swagat Sarma
+                </span>
+            </div>
+            <div class="sidebar-options">
+                <div class="sidebar-option">
+                    <a href="./nse-data.html">
+                        <img src="./images/icons/Announced.png" alt=""> <span class="sidebar-items">NSE OHLC Data
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar-option">
+                    <a href="./api-access.html">
+                        <img src="./images/icons/ArrowCircleDown.png" alt=""> <span class="sidebar-items">Api Access
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar-option">
+                    <a href="./ticker.html">
+                        <img src="./images/icons/ArrowsIn.png" alt=""> <span class="sidebar-items">Historical ticker
+                            data
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar-option">
+                    <a href="./explorer.html">
+                        <img src="./images/icons/Search.png" alt=""> <span class="sidebar-items">Stock explorer (Beta)
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-side">
+            <!-- titile part -->
+            <div>
+                <h4>Stock explorer</h4>
+                <!-- explorer card  -->
+                <div class="explorer-card">
+                    <p class="explorer-title">INFY</p>
+
+                    <div class="growth">
+                        <div class="market-growth">
+                            <div class="market-growth-title">Market growth</div>
+                            <span class="perchantage-4">4%</span>
+                        </div>
+                        <div class="bot-growth">
+                            <div class="bot-growth-title">Bot growth</div>
+                            <div class="bot-growth-perchantage">
+                                <div>
+                                    <span class="perchantage-12">12%</span>
+                                    <span class="perchantage-8">+8%</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <ul class="years">
+                        <li>1y</li>
+                        <li>3y</li>
+                        <li>5y</li>
+                        <li>10y</li>
+                    </ul>
+                    <div style="text-align: center;">
+                        <button class="deploy-btn" onclick="window.location.href='./coming-soon.html'">Deploy
+                            bot</button>
+                    </div>
+                    <!-- <div class="gradient-floor red-to-blue"></div> -->
+                </div>
+                <div class="gradient-floor red-to-blue"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/active.js"></script>
+</body>
+
+</html>

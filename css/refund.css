@@ -1,0 +1,22 @@
+.refund-policies p:not(.subscription-policy) {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .text-container {
+    display: flex;
+    height: 66vh;
+    height: 140%;
+    flex-direction: column;
+  }
+
+  .refund-heading {
+    margin-bottom: 0;
+  }
+  .subscription-policy {
+    margin-bottom: 0;
+  }
+  .subscription-policy,
+  .refund-time {
+    width: 55rem;
+  }
+}

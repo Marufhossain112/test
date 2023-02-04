@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSE OHLC Data - XQUANTUM</title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="./css/nse-data.css">
+</head>
+
+<body>
+
+    <div>
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sidebar">
+                    <div class="profile">
+                        <img src="./images/icons/User.png" alt=""> <span>
+                            Swagat Sarma
+                        </span>
+                    </div>
+                    <div class="sidebar-options">
+                        <div class="sidebar-option">
+                            <a href="./nse-data.html">
+                                <img src="./images/icons/Announced.png" alt=""> <span class="sidebar-item">NSE OHLC Data
+                                </span>
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="./api-access.html">
+                                <img src="./images/icons/ArrowCircleDown.png" alt=""> <span class="sidebar-item">Api
+                                    Access
+                                </span>
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="./ticker.html">
+                                <img src="./images/icons/ArrowsIn.png" alt=""> <span class="sidebar-item">Historical
+                                    ticker
+                                    data </span>
+                            </a>
+                        </div>
+                        <div class="sidebar-option">
+                            <a href="./explorer.html">
+                                <img src="./images/icons/Search.png" alt=""> <span class="sidebar-item">Stock explorer
+                                    (Beta) </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <header class="navbar-container">
+        <button class="btn hamburger-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <a href="./"><img src="./images/logo.svg.png" alt=""></a>
+        </div>
+        <div class="question-mark"> <a href="./coming-soon.html">
+                <img src="./images/icons/Question.png" alt="">
+            </a></div>
+    </header>
+    <main>
+        <div class="sidebar hide-on-moblie">
+            <div class="profile">
+                <img src="./images/icons/User.png" alt=""> <span>
+                    Swagat Sarma
+                </span>
+            </div>
+            <div class="sidebar-options">
+                <div class="sidebar-option">
+                    <a href="./nse-data.html">
+                        <img src="./images/icons/Announced.png" alt=""> <span class="sidebar-items">NSE OHLC Data
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar-option">
+                    <a href="./api-access.html">
+                        <img src="./images/icons/ArrowCircleDown.png" alt=""> <span class="sidebar-items">Api Access
+                        </span>
+                    </a>
+
+                </div>
+                <div class="sidebar-option">
+                    <a href="./ticker.html">
+                        <img src="./images/icons/ArrowsIn.png" alt=""> <span class="sidebar-items">Historical ticker
+                            data
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar-option">
+                    <a href="./explorer.html">
+                        <img src="./images/icons/Search.png" alt=""> <span class="sidebar-items">Stock explorer (Beta)
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-side">
+            <!-- titile part -->
+            <div>
+                <h4>NSE OHLC Data</h4>
+                <p>Fresh Download</p>
+            </div>
+            <!-- Download form -->
+            <div>
+                <form action="#">
+                    <div class="form-container">
+                        <select name="stock" id="stock">
+                            <option value="stocks">Select stocks</option>
+                            <option value="stocks">Option 1</option>
+                            <option value="stocks">Option 2</option>
+                            <option value="stocks">Option 3</option>
+
+                        </select>
+                        <select name="from" id="from">
+                            <option value="from">From</option>
+                            <option value="form">Option 1</option>
+                            <option value="form">Option 2</option>
+                            <option value="form">Option 3</option>
+                        </select>
+                        <select name="to" id="to">
+                            <option value="to">To</option>
+                            <option value="to">Option 1</option>
+                            <option value="to">Option 2</option>
+                            <option value="to">Option 3</option>
+                        </select>
+                        <button class="download-btn"
+                            onclick="window.location.href='./coming-soon.html'">Download</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Download history -->
+            <div>
+                <p class="history-title">Download History</p>
+                <div class="history-container">
+                    <div>
+                        <p>Request Date</p>
+                        <p>Feb 2nd, 2023</p>
+                        <p>Feb 2nd, 2023</p>
+                        <p>Feb 2nd, 2023</p>
+                    </div>
+                    <div>
+                        <p> Stocks</p>
+                        <p>All</p>
+                        <p>All</p>
+                        <p>All</p>
+                    </div>
+                    <div>
+                        <p>From</p>
+                        <p>Jan 1st, 1990</p>
+                        <p>Jan 1st, 1990</p>
+                        <p>Jan 1st, 1990</p>
+                    </div>
+                    <div>
+                        <p>To</p>
+                        <p>Jan 1st, 1990</p>
+                        <p>Jan 1st, 1990</p>
+                        <p>Jan 1st, 1990</p>
+                    </div>
+                    <div>
+                        <p>Status</p>
+                        <p>Complete</p>
+                        <p>In progress</p>
+                        <p>Cancelled</p>
+                    </div>
+                    <div>
+                        <p>Download</p>
+                        <img src="./images/icons/Announced.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/active.js"></script>
+</body>
+
+</html>

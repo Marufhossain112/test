@@ -1,0 +1,21 @@
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: url(./../images/header-background.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login-form form {
+  width: 100%;
+  padding: 0 3%;
+}
+@media (min-width: 1200px) {
+  .login-form form {
+    width: 30%;
+    margin-left: 15%;
+  }
+}

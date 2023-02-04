@@ -1,0 +1,24 @@
+body {
+  background: url("/images/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 55rem;
+}
+.privacy-heading {
+  margin-top: 10rem;
+}
+@media (max-width: 900px) {
+  .main {
+    padding: 0 25px;
+  }
+}
